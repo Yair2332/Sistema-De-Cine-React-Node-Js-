@@ -1,0 +1,228 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+body {
+  background-color: #121212;
+  color: white;
+}
+
+h2 {
+  background: linear-gradient(45deg, rgba(212, 40, 42, 1) 24%, rgba(207, 40, 42, 1) 26%, rgba(30, 30, 30, 1) 86%);
+
+  padding: 10px;
+}
+
+.banner {
+  height: 450px;
+  background-image: url("../public/2x1.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  flex-direction: column;
+}
+
+.banner h3,
+.banner p {
+  width: 100%;
+  padding: 10px 0px;
+  background-color: #1e1e1e3a;
+}
+
+.card {
+  background: linear-gradient(45deg, rgba(30, 30, 30, 1) 48%, rgba(166, 32, 34, 1) 86%);
+  border: none;
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card img {
+  border-radius: 10px;
+  transition: opacity 0.3s;
+  height: 320px;
+  object-fit: contain;
+}
+
+.card img:hover {
+  opacity: 0.8;
+}
+
+.btn:hover {
+  transform: scale(1.1);
+}
+
+.form .btn:hover {
+  transform: scale(1);
+}
+
+.footer {
+  background-color: #1e1e1e;
+  padding: 20px;
+  text-align: center;
+  margin-top: 40px;
+}
+
+
+.card-title {
+  height: 50px;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: black gray;
+}
+
+.card-text {
+  height: 100px;
+  overflow-y: auto;
+  scrollbar-width: none;
+  scrollbar-color: black gray;
+}
+
+.flotante {
+  position: absolute;
+  top: 50px;
+  right: 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  width: '200px';
+}
+
+.btn-flotante {
+  width: 100%;
+  padding: 8px;
+  margin-top: 10px;
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+.upload-section {
+  background-color: #1e1e1e;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+.upload-preview img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.movie-details {
+  background-color: #1e1e1e;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 40px;
+  animation: fadeIn 1s;
+}
+.movie-poster {
+  width: 100%;
+  border-radius: 10px;
+}
+.btn-horario {
+  margin: 5px;
+  transition: transform 0.2s;
+}
+.btn-horario:hover {
+  transform: scale(1.1);
+}
+
+
+.screen {
+  width: 90%;
+  height: 50px;
+  background: linear-gradient(to bottom, #ffffff, #cccccc);
+  margin: 20px auto;
+  border-radius: 5px;
+  text-align: center;
+  line-height: 50px;
+  font-weight: bold;
+  color: black;
+}
+.seats-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.asientos .row {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+}
+.seat {
+  width: 50px;
+  padding: 0px 10px;
+  height: 40.3px;
+  background-color: #444;
+  background-image: url("https://cdn-icons-png.freepik.com/512/302/302271.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+.seat:hover {
+  transform: scale(1.2);
+  background-color: #28a745;
+}
+.occupied {
+  background-color: orange;
+  cursor: not-allowed;
+}
+
+.seat.selected {
+  background-color: green; /* Asiento seleccionado */
+}
+.aisle {
+  width: 20px;
+}
+
+
+.carru{
+  position: relative;
+}
+
+.btn-cerrar{
+  position: absolute;
+  top: 50px;
+  right: 25px;
+  z-index: 500;
+}
+
+
+.borrar{
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  top: 3px;
+  padding: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.9rem;
+  left: 3px;
+  z-index: 1000;
+}
