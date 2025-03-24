@@ -1,0 +1,21 @@
+# Ignorar node_modules en ambas carpetas
+client/node_modules/
+server/node_modules/
+
+# Ignorar carpetas de producción y dependencias de React
+client/build/
+client/.pnp/
+client/.pnp.js
+client/coverage/
+
+# Ignorar archivos del backend (server)
+server/.env
+server/.DS_Store
+server/npm-debug.log*
+server/yarn-debug.log*
+server/yarn-error.log*
+
+# Ignorar configuraciones de sistema y editores
+.DS_Store
+.idea/
+.vscode/
